@@ -1,0 +1,103 @@
+baseURL = "https://dsamarraribeiro.pt"
+title   = "D. Samarra Ribeiro"
+languageCode = "pt-pt"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+# copyright = ""
+
+googleAnalytics = ""
+disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "D. Samarra Ribeiro"
+
+[blackfriday]
+  hrefTargetBlank = false
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  
+  enableGlobalLanguageMenu = false
+
+  customCSS = []
+  customJS  = []
+
+  justifyContent = false
+
+  [params.footer]
+    trademark = false
+    rss = false
+    copyright = true
+    author = true
+
+    # topText = []
+    # bottomText = [
+    #  "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+    #  "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+    # ]
+
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = "-"
+    logoText     = "D. Samarra Ribeiro"
+    logoHomeLink = "/"
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Append the current url pathname to logoText 
+    # logoCursorPathname = true
+
+  # Social icons
+    [[params.social]]
+    name = "email"
+    url  = "mailto:nobody@example.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
